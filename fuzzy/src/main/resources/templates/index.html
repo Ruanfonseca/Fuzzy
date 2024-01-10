@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+
+    <link rel="icon" href="./analise-de-mercado.png">
+
+    <title>Analisador de comentários</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+          crossorigin="anonymous">
+
+    <link href="Estilo.css" rel="stylesheet" />
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+<div class="container centered-form">
+    <h1>Analisador de comentários</h1>
+    <form action="/Analisando" method="post">
+        <div class="form-group">
+            <label for="frase">Digite um texto:</label>
+            <textarea class="form-control" id="frase" name="frase" rows="4" cols="50" required></textarea>
+        </div>
+
+        <br>
+
+        <button type="submit" class="btn btn-primary">Analisar</button>
+
+    </form>
+
+
+</div>
+</body>
+</html>
